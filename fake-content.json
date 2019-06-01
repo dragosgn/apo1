@@ -58,6 +58,19 @@
                     "text":"Freut mich. Das bedeutet, dass Krankenkassen endlich mehr dafuer bezahlen!"
                 }
             ]
+        },
+        {
+            "type": "article",
+            "image":"https://img.aerzteblatt.de/800x/bilder/2018/01/img137815832.jpg",
+            "author":5,
+            "title":"CLL: Kombination aus Ibrutinib und Venetoclax beseitigt Krebszellen aus dem Knochenmark",
+            "text":"Houston – Eine Kombinationsbehandlung mit den beiden oral verfügbaren Wirkstoffen Ibrutinib und Venetoclax, die derzeit nur zur Monotherapie der chronischen lymphatischen Leukämie (CLL) eingesetzt werden, hat in einer Phase-2-Studie im New England Journal of Medicine (2019; 380: 2095-2103) häufig komplette Remissionen erzielt, die mit einer Beseitigung der Tumorzellen aus dem Knochenmark verbunden waren.",
+            "comments":[
+                {
+                    "author":4,
+                    "text":"Interessant. Ich werde mir demnaechst eine Fortbildung dazu anhoeren. Das koennte vielen meiner Patienten helfen."
+                }
+            ]
         }
     ]
 }
