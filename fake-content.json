@@ -1,0 +1,48 @@
+{
+    "content": [
+        {
+            "type": "article",
+            "author":"Dr. Schmidt",
+            "title":"Wie Aerzte mit geringem Budget in Lateinamerika tropische Krankheiten bekaempfen. ",
+            "text":"...",
+            "comments":[
+                {
+                    "author":"Dr. Simon Held",
+                    "text":"toll!"
+                }
+            ]
+        },
+        {
+            "type":"question",
+            "author":"Dr. Michael Stein",
+            "title":"Welche Roentgenmaschine wuerdet ihr mir empfehlen?",
+            "text":"Ich denke an die Siemens X200 aber ich bin mir nicht sicher, ob sie den neusten Regulierungen zum Strahlenschutz entspricht",
+            "comments":[
+                {
+                    "author":"Thomas Franklin (Siemens)",
+                    "text":"Ich wuerde die X300 empfehlen."
+                },
+                {
+                    "author":"Dr. Annika Meier",
+                    "text":"Ich benutze die XMedtech 3000, bin sehr zufriegen."
+                }
+            ]
+        },
+        {
+            "type":"course",
+            "author":"Dr. Roberto Frank",
+            "title":"Praxismanagement: Praktisch gedacht",
+            "text":"Samstag, 12.7.2019. Es wird wie immer ein Mittagessen dazu geben.",
+            "comments":[
+                {
+                    "author":"Dr. Michael Stein",
+                    "text":"Wieviel Punkte gibt diese Forbildung?"
+                },
+                {
+                    "author":"Dr. Roberto Frank",
+                    "text":"Hallo Dr. Stein. Diese Fortbildung gibt 4 Punkte."
+                }
+            ]
+        }
+    ]
+}
