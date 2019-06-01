@@ -1,36 +1,34 @@
 import React from "react";
-import {
-  StreamApp,
-  NotificationDropdown,
-  FlatFeed,
-  Activity,
-  LikeButton
-} from "react-activity-feed";
-import "react-activity-feed/dist/index.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import Stream from "./StreamApp";
+
+const Home = () => <p>this is home</p>;
 
 class App extends React.Component {
   render() {
     return (
-      <StreamApp
-        apiKey="du8he7epvp94"
-        appId="45206"
-        token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNmI4ZjRkZjAtOTVhMS00ZWY5LWI4NzAtMzBjNTc0N2RiNThlIn0.XbVHgFN9NcVBiL5sg878hFNne1RqiZTOmd2459lC41s"
-      >
-        <NotificationDropdown notify />
-        <FlatFeed
-          notify
-          Activity={props => (
-            <Activity
-              {...props}
-              Footer={() => (
-                <div style={{ padding: "8px 16px" }}>
-                  <LikeButton {...props} />
-                </div>
-              )}
-            />
-          )}
-        />
-      </StreamApp>
+      <Router>
+        <div>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/stream">Stream</Link>
+            </li>
+            <li>
+              <Link to="/topics">Topics</Link>
+            </li>
+          </ul>
+
+          <hr />
+
+          <Route exact path="/" component={Home} />
+          <Route path="/stream" component={Stream} />
+          {/* <Route path="/topics" component={Topics} /> */}
+        </div>
+      </Router>
     );
   }
 }
