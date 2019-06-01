@@ -1,37 +1,24 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Stream from "./StreamApp";
-import NavBar from "./NavBar";
+import Feed from "./StreamApp";
+
+import styled from "styled-components";
 
 const Home = () => <p>this is home</p>;
+
+const Root = styled.div`
+  padding: 1rem;
+`;
 
 class App extends React.Component {
   render() {
     return (
       <Router>
-        <NavBar />
-
-        {/* <div>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/stream">Stream</Link>
-            </li>
-            <li>
-              <Link to="/topics">Topics</Link>
-            </li>
-          </ul>
-
-          <hr /> */}
-
-        <Route exact path="/" component={Home} />
-        <Route path="/stream" component={Stream} />
-
-        {/* <Route path="/topics" component={Topics} /> */}
-        {/* </div> */}
+        <Root>
+          <Route exact path="/" component={Home} />
+          <Route path="/feed" component={Feed} />
+        </Root>
       </Router>
     );
   }
