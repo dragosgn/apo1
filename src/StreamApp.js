@@ -13,6 +13,7 @@ import "react-activity-feed/dist/index.css";
 
 export default class Stream extends React.Component {
   render() {
+    console.log("process.env", process.env);
     return (
       <StreamApp
         apiKey="9nktx8a34w6u"
