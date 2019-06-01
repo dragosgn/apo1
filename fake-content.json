@@ -96,6 +96,19 @@
                     "text":"Interessant. Ich werde mir demnaechst eine Fortbildung dazu anhoeren. Das koennte vielen meiner Patienten helfen."
                 }
             ]
+        },
+        {
+            "type": "article",
+            "image":"https://img.aerzteblatt.de/800x/bilder/2019/05/img139906568.jpg",
+            "author":3,
+            "title":"Pakistan bittet um internationale Hilfe nach HIV-Ausbruch",
+            "text":"Islamabad – Nach Hunderten positiven HIV-Tests in der südpakistanischen Provinz Sindh hat Islamabad um internationale Unterstützung gebeten. Ein gemeinsames Team der Welt­gesund­heits­organi­sation (WHO) und der US-Gesundheitsbehörde CDC werde in den nächsten Tagen in Pakistan eintreffen und mit einheimischen Ärzten zu­sammenarbeiten, sagte der Arzt und Assistent des Ministerpräsidenten für Gesund­heit, Zafar Mirza, heute.Die internationalen Experten sollten die genaue Ursache des Ausbruchs untersuchen und die lokalen Behörden dabei unterstützen, die Ausbreitung zu kontrollieren, sagte Mirza.Hunderte positive HIV-Tests bei Bewohnern rund um die Stadt Rato Dero – der Groß­teil davon Kinder bis zu zwölf Jahren – haben die Bevölkerung in den vergangenen Wochen aufgeschreckt.",
+            "comments":[
+                {
+                    "author":5,
+                    "text":"Ich will demnaechst Aerzte ohne Grenzen machen!"
+                }
+            ]
         }
     ]
 }
