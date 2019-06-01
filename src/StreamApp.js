@@ -15,15 +15,19 @@ export default class Stream extends React.Component {
   render() {
     return (
       <StreamApp
-        apiKey={process.env.REACT_APP_API_KEY}
-        appId={process.env.REACT_APP_APP_ID}
-        token={process.env.REACT_APP_TOKEN}
+        // apiKey={process.env.REACT_APP_API_KEY}
+        // appId={process.env.REACT_APP_APP_ID}
+        // token={process.env.REACT_APP_TOKEN}
+        apiKey="qydnwc8yx2gj"
+        appId="53036"
+        token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoidXNlci1vbmUifQ.SN468APm3IORHsT_p_f_DjYQeLOFy5RldlO4UXSJ8gk"
       >
+        >
         <NotificationDropdown notify />
-        <StatusUpdateForm
+        {/* <StatusUpdateForm
           feedGroup="timeline"
           userId={process.env.REACT_APP_USER_ID}
-        />
+        /> */}
         <FlatFeed
           notify
           Activity={props => (

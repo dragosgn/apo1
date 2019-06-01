@@ -1,35 +1,76 @@
 import React from "react";
-// import { makeStyles } from "@material-ui/core/styles";
-import BottomNavigation from "@material-ui/core/BottomNavigation";
-import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import RestoreIcon from "@material-ui/icons/Restore";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
+import PropTypes from "prop-types";
+import SwipeableViews from "react-swipeable-views";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import Typography from "@material-ui/core/Typography";
 
-// const useStyles = makeStyles({
-//   root: {
-//     width: 500
-//   }
-// });
+import { Link } from "react-router-dom";
 
-function SimpleBottomNavigation() {
-  //   const classes = useStyles();
-  //   const [value, setValue] = React.useState(0);
-
+function TabContainer({ children, dir }) {
   return (
-    <BottomNavigation
-      //   value={value}
-      //   onChange={(event, newValue) => {
-      //     setValue(newValue);
-      //   }}
-      showLabels
-      //   className={classes.root}
-    >
-      <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
-    </BottomNavigation>
+    <Typography component="div" dir={dir} style={{ padding: 8 * 3 }}>
+      {children}
+    </Typography>
   );
 }
 
-export default SimpleBottomNavigation;
+TabContainer.propTypes = {
+  children: PropTypes.node.isRequired,
+  dir: PropTypes.string.isRequired
+};
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    backgroundColor: theme.palette.background.paper,
+    width: 500
+  }
+}));
+
+function FullWidthTabs() {
+  const classes = useStyles();
+  const theme = useTheme();
+  const [value, setValue] = React.useState(0);
+
+  function handleChange(event, newValue) {
+    setValue(newValue);
+  }
+
+  function handleChangeIndex(index) {
+    setValue(index);
+  }
+
+  return (
+    <div className={classes.root}>
+      <AppBar position="static" color="default">
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          indicatorColor="primary"
+          textColor="primary"
+          variant="fullWidth"
+        >
+          <Link to="/stream">
+            <Tab label="Community" />
+          </Link>
+
+          <Tab label="Item Two" />
+          <Tab label="Item Three" />
+        </Tabs>
+      </AppBar>
+      <SwipeableViews
+        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+        index={value}
+        onChangeIndex={handleChangeIndex}
+      >
+        <TabContainer dir={theme.direction}>Item One</TabContainer>
+        <TabContainer dir={theme.direction}>Item Two</TabContainer>
+        <TabContainer dir={theme.direction}>Item Three</TabContainer>
+      </SwipeableViews>
+    </div>
+  );
+}
+
+export default FullWidthTabs;

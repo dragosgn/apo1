@@ -11,6 +11,7 @@ class App extends React.Component {
     return (
       <Router>
         <NavBar />
+
         {/* <div>
           <ul>
             <li>
