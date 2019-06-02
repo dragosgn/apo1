@@ -74,15 +74,15 @@ export default {
     acts: [
       {
         user: 1,
-        activity: "Gogogogo1"
+        activity: "Radiology"
       },
       {
         user: 2,
-        activity: "Gogogogo2"
+        activity: "Internal medicine"
       },
       {
         user: 3,
-        activity: "Gogogogo3"
+        activity: "Cardiology"
       }
     ]
   }),
