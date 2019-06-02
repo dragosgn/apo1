@@ -3,18 +3,18 @@
         <v-container>
 
             <v-layout row>
-                <v-flex  pl-4>
+                <v-flex pl-4>
                     <v-slider
                             wrap
-                        color="orange darken-1"
-                        :label="'Age: ' + age"
-                        v-model="age"
-                        step="1"
-                        max="100"
-                        min="30"
+                            color="orange darken-1"
+                            :label="'Age: ' + age"
+                            v-model="age"
+                            step="1"
+                            max="100"
+                            min="30"
 
-                        thumb-label="always"
-                ></v-slider>
+                            thumb-label="always"
+                    ></v-slider>
                 </v-flex>
 
 
@@ -67,16 +67,16 @@
                     </v-flex>
                 </v-layout>
                 <v-flex pl-4>
-                     <v-switch
-                        color="red darken-2"
-                        v-model="sex"
-                        :label='sex?"singles":"all"'
-                ></v-switch>
+                    <v-switch
+                            color="red darken-2"
+                            v-model="sex"
+                            :label='sex?"singles":"all"'
+                    ></v-switch>
                 </v-flex>
                 <v-flex pl-4>
                     <v-select
-                              :items="['Frauenarzt','Männerarzt']"
-                              label="Fachrichtung"
+                            :items="['Frauenarzt','Männerarzt']"
+                            label="Fachrichtung"
                     ></v-select>
                 </v-flex>
 
@@ -91,33 +91,35 @@
                     <l-tile-layer
                             url="https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw"></l-tile-layer>
 
-
-                    <l-marker
-                            v-for="user in (users)"
-                            :lat-lng="[user.lat_lon[0],user.lat_lon[1]]"
-                    >
-                        <l-icon :icon-anchor=" [30/2, 0]">
-                            <v-card style="height:30px; width: 30px; background-color: white">
-                                <v-img height="30" width="30" :src="user.image"/>
-                            </v-card>
-                        </l-icon>
-                        <l-popup>
-                            <v-layout column style="text-align: center">
-                                <v-card>
-                                    <img
-                                            v-lazy="user.image    "
-                                            width="100"
-                                    />
+                    <div v-for="(loc_types,idx) in locs" :key="idx">
+                        <l-marker
+                                v-for="user in (loc_types)"
+                                :lat-lng="[user.lat_lon[0],user.lat_lon[1]]"
+                        >
+                            <l-icon :icon-anchor=" [30/2, 0]">
+                                <v-card style="height:30px; width: 30px; background-color: white">
+                                    <v-img height="30" width="30" :src="user.image"/>
                                 </v-card>
-                                <v-flex pt-1>
-                                    {{user.address}}
-                                    <br/>
-                                    {{user.name}}
-                                </v-flex>
-                            </v-layout>
-                        </l-popup>
+                            </l-icon>
+                            <l-popup>
+                                <v-layout column style="text-align: center">
+                                    <v-card>
+                                        <img
+                                                v-lazy="user.image    "
+                                                width="100"
+                                        />
+                                    </v-card>
+                                    <v-flex pt-1>
+                                        {{user.address}}
+                                        <br/>
+                                        {{user.name}}
+                                    </v-flex>
+                                </v-layout>
+                            </l-popup>
 
-                    </l-marker>
+                        </l-marker>
+
+                    </div>
 
 
                 </l-map>
@@ -131,7 +133,7 @@
 <script>
   import axios from "axios";
   import Vue from "vue";
-  import users from "./jsons.js";
+  import {users, banks, courses} from "./jsons.js";
 
 
   var api_host = 'https://ohsrb65n38.execute-api.eu-central-1.amazonaws.com/proxy/'
@@ -158,6 +160,12 @@
     data: () => ({
       // Travel time describes the stage on which it is traveling
       users: users,
+      banks: banks,
+      locs: {
+        banks: banks,
+        users: users,
+        courses:courses,
+      },
       travel_time: 0,
       sex: true,
       sources: {
@@ -171,34 +179,7 @@
         false: 200
       },
       age: 35,
-      source:
-          [
-            {
-              coords: [49.021615, 8.439576],
-              name: 'CAS',
-              logo: 'cas.png'
-            },
-            {
-              coords: [49.011575, 8.417105],
-              name: 'KIT',
-              logo: 'KIT.png'
-            },
-            {
-              coords: [49.005820, 8.405106],
-              name: 'BFK',
-              logo: 'BFK.png'
-            },
-            {
-              coords: [48.980583, 8.330252],
-              name: 'MES',
-              logo: 'mes.png'
-            },
-            {
-              coords: [52.520614, 13.401752],
-              name: 'HACK',
-              logo: 'https://www.egr.msu.edu/fraunhofer-ccd/sites/default/files/content/FH_SYMBOL.jpg'
-            },
-          ],
+
       markers: [[], [], []],
       style: {
         color: "#000",
@@ -231,8 +212,7 @@
             });
       },
     },
-    watch: {
-    },
+    watch: {},
     computed: {
       currentRouteName() {
         return this.$route.name;
