@@ -151,6 +151,14 @@ var acts = [
   },
   {
     user: 2,
+    views: 3,
+    target: "",
+    text: "Ich will eine eigen Praxis haben, aber kein finanzielles Risiko eingehen. Was gibt es fuer Optionen?",
+    activity: "question",
+    image: images.question,
+  },
+  {
+    user: 2,
     tags:["Fettabsaugung entstehen", "Falten entstehen", "NahtLift entstehen", "Unterhautfettgewebe", "Haut bleibende Faden"],
     views: 33,
     target: "",
