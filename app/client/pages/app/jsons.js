@@ -131,7 +131,7 @@ var courses = [
       "specialty": "Lungenarzt"
     },
     {
-      "id": 4
+      "id": 4,
       "name": "Bakterien als Erreger nosokomialer Infektionen",
       "address": "Auf den Steinen 13, 40211 Düsseldorf",
       "image": images.course,
