@@ -99,14 +99,13 @@
 </template>
 
 <script>
-  import users from "./jsons.js";
-
+  import {users,    banks, courses} from"./jsons.js";
 
 
   export default {
     name: "Timeline",
     data: () => ({
-      users:users,
+      users: users,
       acts: [
         {
           user: 1,

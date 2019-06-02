@@ -89,7 +89,8 @@
 </template>
 
 <script>
-  import users from "./jsons.js";
+    import {users,    banks, courses} from"./jsons.js";
+
 
 
   export default {
