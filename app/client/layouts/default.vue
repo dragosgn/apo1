@@ -14,7 +14,7 @@
                     <v-flex xs12 sm10 md7>
                         <v-layout align-center justify-space-between row fill-height>
 
-                            <v-btn :active="toggle_exclusive===6" @click="toggle_exclusive=6" flat color="white"
+                            <v-btn  :active="toggle_exclusive===6" @click="toggle_exclusive=6" flat color="red"
                                    to="/app/registration">
                                 <div :style="toggle_exclusive===6 ? 'text-decoration: underline' :''">
                                     Registrieren
@@ -22,7 +22,7 @@
                                 <v-icon>home</v-icon>
                             </v-btn>
 
-                            <v-btn :active="toggle_exclusive===1" @click="toggle_exclusive=1" flat color="white"
+                            <v-btn  :active="toggle_exclusive===1" @click="toggle_exclusive=1" flat color="red"
                                    to="/app/acts">
                                 <div :style="toggle_exclusive===1 ? 'text-decoration: underline' :''">
                                     Feed
@@ -31,32 +31,13 @@
                             </v-btn>
 
 
-                            <v-btn :active="toggle_exclusive===2" @click="toggle_exclusive=2" flat color="white"
+                            <v-btn :active="toggle_exclusive===2" @click="toggle_exclusive=2" flat color="red"
                                    to="/app/map">
                                 <div :style="toggle_exclusive===2 ? 'text-decoration: underline' :''">
                                     Map
                                 </div>
                                 <v-icon>my_location</v-icon>
                             </v-btn>
-                            <!--
-                            <v-btn
-                                    :active="toggle_exclusive===3" @click="toggle_exclusive=3" flat color="white"
-                                    to="/app/Hackathons">
-                                <div :style="toggle_exclusive===3 ? 'text-decoration: underline' :''">
-                                    Hackathon
-                                </div>
-                                <v-icon>star</v-icon>
-                            </v-btn>
-                            <v-btn
-                                    small
-                                    :active="toggle_exclusive===4" @click="toggle_exclusive=4" flat color="white"
-                                    to="/app/Demos">
-                                <div :style="toggle_exclusive===4 ? 'text-decoration: underline' :''">
-                                    Toys
-                                </div>
-                                <v-icon>touch_app</v-icon>
-                            </v-btn>
-                            -->
                         </v-layout>
 
                     </v-flex>
@@ -150,22 +131,25 @@
 <style>
     .v-toolbar__content {
         height: 52px;
-        border-top: #ffa400;
         border-top-width: 4px;
         border-top-style: solid;
-        background-color: #ff001ac4;
+        background-color: transparent;
     }
 
     .sun {
         height: 60px;
-        border-top: #ffa400;
+        border-top: white;
         border-top-width: 4px;
         border-top-style: solid;
-        background-color: #ff001ac4;
+        background-color: white;
     }
 
     .v-item-group.v-bottom-nav .v-btn {
         min-width: 0px;
         width: 100%;
+    }
+    
+    .navbtn{
+        color:red;
     }
 </style>
