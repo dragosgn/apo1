@@ -154,15 +154,31 @@ var acts = [
 var dialog = [
   {
     user: 4,
-    text: "Hello, I have a question?"
+    text: "Hello, I have a question."
   },
   {
     user: 2,
-    text: "You need to do this or that."
+    text: "You need to ask someone more experience. I don't know about that."
   },
   {
     user: 1,
     text: "What for a stupid advice!"
+  },
+  {
+    user: 3,
+    text: "Are you sure it is going to be ok from a legal perspective?"
+  },
+  {
+    user: 1,
+    text: "Thank you."
+  },
+  {
+    user: 4,
+    text: "This reminds me of 2017. Someone asked exactly this question."
+  },
+  {
+    user: 2,
+    text: "I did not really understand that"
   }
 ];
 export {
