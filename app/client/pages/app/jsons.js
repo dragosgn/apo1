@@ -170,12 +170,13 @@ var acts = [
     article: (["Mehr Haar, mehr Selbstvertrauen, mehr Lebensfreude", "", "Ein Video-Interview mit Frau Dr. Sobczak zu den wichtigsten Fragen moderner Haartransplantation", "", "Auch wenn Schönheitsoperationen heute gesellschaftlich akzeptierter sind denn je: Viele Menschen haben immer noch großen Respekt vor der Vollnarkose und dem Skalpell und überlegen es sich deshalb sehr genau, ob sie sich des Aussehens wegen unter das Messer legen. Doch zum Glück ist nicht jeder Eingriff invasiv, und dankenswerterweise gibt es immer mehr Verfahren, die bei minimalen Risiken maximale Wirkung zeigen. Eines der besten Beispiele dafür sind Haartransplantationen. Sie sind inzwischen so perfektioniert worden und zudem so nachgefragt, dass man sie auf vielen Ebenen fast schon mit einem Besuch beim Zahnarzt vergleichen könnte.", "", "Haarpracht mit zunehmenden Jahren immer mehr verabschiedet und schließlich nur noch vergleichsweise dünnes und stumpfes Haar zurücklässt. Doch Menschen, bei denen das Haar ganz ausfällt, erleben manchmal sogar echte Verzweiflung und büßen erheblich an Selbstvertrauen ein. Nicht nur für Frauen stellt Haarverlust eine echte Krise dar, auch Männer können sich damit nur schwer abfinden. Doch das muss heute auch niemand mehr. Dr. Danuta Sobczak aus Freiburg ist Dermatologin und hat sich auf Haarerkrankungen spezialisiert. Sie weiß aus über 20-jähriger Erfahrung: „Haartransplantationen sind ein problemloser und schmerzfreier Eingriff, der heute mit so gut wie keinen Risiken mehr verbunden ist.\""]).reduce((a, b) => a.concat(b))
   },
   {
-    user: 6,
-    views: 130,
+    user: 4,
+    views: 35,
     target: "",
-    activity: "course",
-    text: "How to hire good personal",
+    activity: "article",
+    text: "Multitalent Acetylcholin",
     image: images.course,
+    article: ([    "Acetylcholin wurde wohl deshalb als erster Neurotransmitter entdeckt, weil er für das vegetative Nervensystem sowie an der Schnittstelle zwischen motorischen Nerven und Skelettmuskulatur eine entscheidende Rolle spielt. Aber auch im Gehirn finden sich cholinerge Neuronen. Die wichtigsten davon lassen sich zu zwei diffusen Modulationssystemen zusammenfassen.",    "",    "Das eine System innerviert von der Basis des Großhirns aus (zwischen und unter den Basalganglien) Hippocampus, Neocortex und Riechkolben. Diese Zellen gehören zu den ersten, die bei der Alzheimer-Krankheit absterben. Inwieweit es darüber hinaus eine Verbindung zu der Krankheit gibt, ist unklar. Unter den zugelassenen Alzheimer-Medikamenten, die den Verlust geistiger Fähigkeiten zumindest verzögern sollen, befinden sich aber Wirkstoffe, die den Acetylcholin-Abbau im Gehirn verlangsamen. Das zweite System besteht aus Zellen im Pons und im Tegmentum des Mittelhirns. Es wirkt vor allem in den Thalamus hinein, darüber aber auch stark ins Großhirn.",    "",    "Beteiligt sind die cholinergen Neuronen etwa an der Steuerung von Aufmerksamkeit und der Erregbarkeit des Gehirns während Schlaf– und Wachrhythmus. In Tierversuchen wurde deutlich, dass Acetylcholin die Weiterleitung sensorischer Reize vom Thalamus in die zuständigen Cortex-Regionen fördert. Darüber hinaus dürfte es für Plastizität und Lernen eine entscheidende Rolle spielen."]).reduce((a,b)=>a.concat(b))
   }
 ]
 
