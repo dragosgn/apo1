@@ -147,8 +147,8 @@
 
                                 </v-flex>
                                 <v-flex>
-                                    <v-item-group>
-                                        <v-chip small v-for="(chip,index) in hack.prize" :key="index">
+                                    <v-item-group v-if="hack">
+                                        <v-chip small v-for="(chip,index) in hack.tag" :key="index">
                                     <span class="caption">
                                         #{{index+1}}: {{chip}}
 
@@ -289,7 +289,7 @@
 
           url: ['https://www.hackathonforgood.org/']
         },
-                  {
+        {
           titel: 'VR / AR hackathon',
           date_start: '2019.06.28',
           date_end: '2019.06.28',

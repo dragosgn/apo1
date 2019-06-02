@@ -8,17 +8,29 @@
 
                     </v-card>
                 </v-flex>
-                <v-flex grow >
+                <v-flex grow>
                     <h3>{{users[acts[act_nr].user].name}}'s {{acts[act_nr].activity }}:</h3>
+
                     <p>{{acts[act_nr].text}}</p>
+                    <v-flex>
+                        <v-item-group v-if="acts[act_nr].hasOwnProperty('tags')">
+                            <v-chip small v-for="(chip,index) in acts[act_nr].tags" :key="index">
+                                {{chip}}
+                            </v-chip>
+                        </v-item-group>
+                    </v-flex>
                     <p>{{acts[act_nr].article}}</p>
                 </v-flex>
+
             </v-layout>
 
             <v-layout align-right justify-center column>
 
                 <v-flex pb-2 v-for="(say,idx) in dialog" :key="idx">
                     <v-card class="elevation-2">
+                        <v-card-title>
+
+                        </v-card-title>
                         <v-card-text>
                             <v-layout row align-right justify-center class="subheading"
                                       :reverse="say.user===1"

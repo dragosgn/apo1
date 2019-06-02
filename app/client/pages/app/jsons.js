@@ -162,7 +162,7 @@ var acts = [
   {
     user: 4,
     views: 207,
-    tag:["Haartransplantationen", "Selbstvertrauen", "stumpfes Haar", "Danuta Sobczak",],
+    tags:["Haartransplantationen", "Selbstvertrauen", "stumpfes Haar", "Danuta Sobczak",],
     target: "",
     text: "Haartransplantationen",
     activity: "article",
