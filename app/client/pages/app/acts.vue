@@ -62,7 +62,7 @@
                             <!--Description of the article-->
                             <v-card
                                     :to="'/app/question?act='+index"
-                                    row align-center justify-start row fill-height wight="100%">
+                                    row align-center justify-start row fill-height width="100%">
                                 <v-layout row pa-1>
                                     <v-flex pa-1 xs3>
                                         <v-sheet>
@@ -71,8 +71,8 @@
                                         </v-sheet>
                                     </v-flex>
                                     <v-flex pl-2>
-                                        <span style="color:#1B777D;font-style: italic">{{hack.activity}}</span>:
-                                        {{hack.text}}
+                                        <span style="color:#1B777D;font-style: italic; font-size: 16px;">{{hack.activity}}</span>:
+                                        <p style="color:#1B777D;font-style: italic; font-size: 22px;">{{hack.text}}</p>
 
                                     </v-flex>
 
