@@ -1,0 +1,36 @@
+service: vue-nuxt-vuetify-prod
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${self:custom.secrets.NODE_ENV}
+  region: us-east-1
+  environment: 
+    NODE_ENV: ${self:custom.secrets.NODE_ENV}
+
+functions:
+  nuxt:
+    handler: index.nuxt
+    events:
+      - http: ANY /
+      - http: ANY /app
+      - http: ANY /{proxy+}
+
+plugins:
+  - serverless-apigw-binary
+  - serverless-domain-manager
+  - serverless-offline
+custom:
+  secrets: ${file(secrets.json)}
+  apigwBinary:
+    types:
+      - '*/*'
+      - 'images/*'
+  customDomain:
+    CertificateArn: arn:aws:acm:us-east-1:908015094215:certificate/bec65550-420e-4a63-a2e0-ef9a8121e1a6
+    domainName: ${self:custom.secrets.DOMAIN}
+    basePath: ''
+    stage: ${self:custom.secrets.NODE_ENV}
+    createRoute53Record: true
+    # endpointType: 'regional'
+    # if the ACM certificate is created in a region except for `'us-east-1'` you need `endpointType: 'regional'`

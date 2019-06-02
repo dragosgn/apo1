@@ -1,0 +1,51 @@
+{
+  "name": "serverless-side-rendering-vue-nuxt",
+  "version": "1.0.0",
+  "description": "Sample project for using Nuxt.js to create a server-side rendered Vue.js app on AWS Lambda and AWS API Gateway. Can easily integrate with your own API or 3rd party APIs such as headless CMS, e-commerce or serverless architecture.",
+  "main": "index.js",
+  "engines": {
+    "node": "8.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "npm run build && sls deploy",
+    "start-server": "npm run build && node app.js",
+    "start-sls": "npm run build && sls offline start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nuxtjs/google-analytics": "^2.2.0",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "helmet": "^3.13.0",
+    "leaflet": "^1.5.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.5.4",
+    "nuxt": "^1.4.5",
+    "serverless-http": "^1.10.1",
+    "shake.js": "^1.2.2",
+    "vue": "^2.6.10",
+    "vue2-leaflet": "^2.1.1",
+    "vuetify": "^1.5.12"
+  },
+  "devDependencies": {
+    "serverless-apigw-binary": "^0.4.4",
+    "serverless-domain-manager": "^2.6.13",
+    "serverless-offline": "^3.25.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasper747/serverless-side-rendering-vue-nuxt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kasper747/serverless-side-rendering-vue-nuxt/issues"
+  },
+  "homepage": "https://github.com/kasper747/serverless-side-rendering-vue-nuxt#readme"
+}

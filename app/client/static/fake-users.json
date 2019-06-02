@@ -1,0 +1,39 @@
+{
+  "users":[
+    {
+      "id":1,
+      "name":"Dr. Schmid",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThsmhAV3cgP2f9ymMtqg9yS43NajFpUEL5zJlaR1qB6ZqeFKFZAQ"
+    },
+    {
+      "id":2,
+      "name":"Dr. Simon Held",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThsmhAV3cgP2f9ymMtqg9yS43NajFpUEL5zJlaR1qB6ZqeFKFZAQ"
+    },
+    {
+      "id":3,
+      "name":"Dr. Michael Stein",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThsmhAV3cgP2f9ymMtqg9yS43NajFpUEL5zJlaR1qB6ZqeFKFZAQ"
+    },
+    {
+      "id": 4,
+      "name": "Dr. Roberto Frank",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThsmhAV3cgP2f9ymMtqg9yS43NajFpUEL5zJlaR1qB6ZqeFKFZAQ"
+    },
+    {
+      "id": 5,
+      "name": "Dr. Annika Meier",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJm8p5eMdBoM-R2J6edEHJWpjaVw8On0VmvD4VBgGB6rBDYNB9qA"
+    },
+    {
+      "id": 6,
+      "name": "Thomas Franklin (Siemens)",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThsmhAV3cgP2f9ymMtqg9yS43NajFpUEL5zJlaR1qB6ZqeFKFZAQ"
+    },
+    {
+      "id": 7,
+      "name": "Sarah Feldkamp (helplingMED)",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThsmhAV3cgP2f9ymMtqg9yS43NajFpUEL5zJlaR1qB6ZqeFKFZAQ"
+    }
+  ]
+}
