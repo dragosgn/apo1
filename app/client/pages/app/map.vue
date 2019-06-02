@@ -18,54 +18,6 @@
                 </v-flex>
 
 
-                <v-layout v-if="false" align-center justify-center fill-height column>
-                    <v-flex xs12>
-                        <v-layout row wrap>
-
-                            <v-btn
-                                    :disabled="loading"
-                                    color="orange darken-1" v-for="(sr, idx) in source" @click="toggle_exclusive= idx"
-                                    :key="idx">
-
-                                <v-img height="30" contain :src="sr.logo"></v-img>
-                                {{sr.name}}
-                            </v-btn>
-                        </v-layout>
-
-
-                    </v-flex>
-                    <v-flex xs12>
-                        <v-layout row justify-space-between>
-                            <v-flex xs4>
-                                <v-select
-                                        value="public transpor"
-                                        :items="['public transpor']"
-                                        disabled
-                                ></v-select>
-
-                            </v-flex>
-
-                            <v-flex xs6>
-                                <v-radio-group v-model="long_stay" color="orange darken-1" row>
-                                    <v-radio
-                                            color="orange darken-1"
-                                            label="Source: AirBnb"
-                                            :value="false"
-                                    ></v-radio>
-                                    <v-radio
-                                            color="orange darken-1"
-                                            label="Source: ImmoScout24"
-                                            :value="true"
-                                    ></v-radio>
-                                </v-radio-group>
-                            </v-flex>
-                        </v-layout>
-
-                    </v-flex>
-                    <v-flex>
-                        Apartments, that are easy to reach in 10, 20 and 30 min by public transport: <b color="organge">{{this.markers[this.travel_time].length}}</b>
-                    </v-flex>
-                </v-layout>
                 <v-flex pl-4>
                     <v-switch
                             color="red darken-2"
@@ -73,11 +25,21 @@
                             :label='sex?"singles":"all"'
                     ></v-switch>
                 </v-flex>
-                <v-flex pl-4>
+
+
+            </v-layout>
+            <v-layout row align-center>
+
+                <v-flex xs-6>
                     <v-select
                             :items="['Frauenarzt','Männerarzt']"
                             label="Fachrichtung"
                     ></v-select>
+                </v-flex>
+                <v-flex xs-6 pl-3>
+                    <v-btn block to="/app/acts" style="color:white" color="#1B777D">
+                        Switch to Feed
+                    </v-btn>
                 </v-flex>
 
             </v-layout>
