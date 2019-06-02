@@ -19,7 +19,11 @@
                             </v-chip>
                         </v-item-group>
                     </v-flex>
-                    <p>{{acts[act_nr].article}}</p>
+                    <v-container>
+
+                        {{acts[act_nr].article}}
+                    </v-container>
+
                 </v-flex>
 
             </v-layout>

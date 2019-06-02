@@ -183,7 +183,7 @@ var acts = [
     target: "",
     activity: "article",
     text: "Multitalent Acetylcholin",
-    image: images.course,
+    image: images.article,
     article: ([    "Acetylcholin wurde wohl deshalb als erster Neurotransmitter entdeckt, weil er für das vegetative Nervensystem sowie an der Schnittstelle zwischen motorischen Nerven und Skelettmuskulatur eine entscheidende Rolle spielt. Aber auch im Gehirn finden sich cholinerge Neuronen. Die wichtigsten davon lassen sich zu zwei diffusen Modulationssystemen zusammenfassen.",    "",    "Das eine System innerviert von der Basis des Großhirns aus (zwischen und unter den Basalganglien) Hippocampus, Neocortex und Riechkolben. Diese Zellen gehören zu den ersten, die bei der Alzheimer-Krankheit absterben. Inwieweit es darüber hinaus eine Verbindung zu der Krankheit gibt, ist unklar. Unter den zugelassenen Alzheimer-Medikamenten, die den Verlust geistiger Fähigkeiten zumindest verzögern sollen, befinden sich aber Wirkstoffe, die den Acetylcholin-Abbau im Gehirn verlangsamen. Das zweite System besteht aus Zellen im Pons und im Tegmentum des Mittelhirns. Es wirkt vor allem in den Thalamus hinein, darüber aber auch stark ins Großhirn.",    "",    "Beteiligt sind die cholinergen Neuronen etwa an der Steuerung von Aufmerksamkeit und der Erregbarkeit des Gehirns während Schlaf– und Wachrhythmus. In Tierversuchen wurde deutlich, dass Acetylcholin die Weiterleitung sensorischer Reize vom Thalamus in die zuständigen Cortex-Regionen fördert. Darüber hinaus dürfte es für Plastizität und Lernen eine entscheidende Rolle spielen."]).reduce((a,b)=>a.concat(b))
   }
 ]
