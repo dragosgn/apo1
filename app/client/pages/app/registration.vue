@@ -71,11 +71,11 @@
                     ></v-text-field>
                 </v-flex>
             </v-layout>
-            <a href="/app/apoone">
-                <v-btn block style="color:white" color="#1B777D" @click="import_profile">
+ 
+                <v-btn block to="/app/apoone" style="color:white" color="#1B777D" >
                     Register
                 </v-btn>
-            </a>
+
         </v-container>
 
     </v-app>
