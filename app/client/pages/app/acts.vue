@@ -34,10 +34,10 @@
                             <v-card-text>
 
 
-                                <v-layout row wrap>
+                                <v-layout  align-center justify-center row wrap>
                                     <v-flex xs5 sm3>
                                         <v-card>
-                                            <v-img height=75 :src="users[hack.user].image"/>
+                                            <v-img height=80 :src="users[hack.user].image"/>
 
                                         </v-card>
 
@@ -62,17 +62,16 @@
                             <!--Description of the article-->
                             <v-card
                                     :to="'/app/question?act='+index"
-                                    row align-center justify-start row fill-height width="100%">
-                                <v-layout row pa-1>
-                                    <v-flex pa-1 xs3>
+                                    row width="100%">
+                                <v-layout row align-center justify-start row fill-height >
+                                    <v-flex pl-1 xs3>
                                         <v-sheet>
-                                            <v-img height="30px" contain :src="hack.image"/>
-
+                                            <v-img height="40px" contain :src="hack.image"/>
                                         </v-sheet>
                                     </v-flex>
                                     <v-flex pl-2>
                                         <span style="color:#1B777D;font-style: italic; font-size: 16px;">{{hack.activity}}</span>:
-                                        <p style="color:#1B777D;font-style: italic; font-size: 22px;">{{hack.text}}</p>
+                                        <p style="color:#1B777D;font-style: italic; font-size: 20px;">{{hack.text}}</p>
 
                                     </v-flex>
 
