@@ -82,7 +82,7 @@
                                         <v-icon small color="#C72961">
                                             remove_red_eye
                                         </v-icon>
-                                        23
+                                        {{hack.views}}
                                     </v-flex>
                                     <v-flex xs2>
                                         <v-icon small color="#C72961">

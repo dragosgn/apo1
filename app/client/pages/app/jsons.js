@@ -111,6 +111,7 @@ var courses = [{
 var acts = [
         {
           user: 2,
+          views:10,
           target: "",
           text: "I need a new X-Ray. Can someone give advice.",
           activity: "question",
@@ -118,6 +119,7 @@ var acts = [
         },
         {
           user: 2,
+          views:33,
           target: "",
           text: "Fettabsaugung mit anschliessendem Nahtlift",
           activity: "article",
@@ -126,6 +128,7 @@ var acts = [
         },
         {
           user: 4,
+          views:207,
           target: "",
           text: "Haartransplantationen",
           activity: "article",
@@ -134,6 +137,7 @@ var acts = [
         },
         {
           user: 6,
+          views:130,
           target: "",
           activity: "course",
           text: "How to hire good personal",
