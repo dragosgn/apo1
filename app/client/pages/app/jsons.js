@@ -105,14 +105,40 @@ var banks = [{
 }];
 
 
-var courses = [{
-  "id": 1,
-  "name": "How to hire good employees.",
-  "address": "Louise-Dumont-Straße 1, 40211 Düsseldorf",
-  "image": images.course,
-  "lat_lon": [51.228604, 6.787391],
-  "specialty": "Finanzierung"
-}];
+var courses = [
+    {
+      "id": 1,
+      "name": "How to hire good employees.",
+      "address": "Louise-Dumont-Straße 1, 40211 Düsseldorf",
+      "image": images.course,
+      "lat_lon": [51.228604, 6.787391],
+      "specialty": "Finanzierung"
+    },
+    {
+      "id": 2,
+      "name": "Arztneimittelinteraktionen bei multimorbiden Patienten",
+      "address": "Louise-Dumont-Straße 5, 40211 Düsseldorf",
+      "image": images.course,
+      "lat_lon": [51.24382,6.73003],
+      "specialty": "Notfallmedizin"
+    },
+    {
+      "id": 3,
+      "name": "Tabakkonsum und Strategien zur Vermeidung",
+      "address": "Glehner Weg 8, 40211 Düsseldorf",
+      "image": images.course,
+      "lat_lon": [51.24368,6.72541],
+      "specialty": "Lungenarzt"
+    },
+    {
+      "id": 4
+      "name": "Bakterien als Erreger nosokomialer Infektionen",
+      "address": "Auf den Steinen 13, 40211 Düsseldorf",
+      "image": images.course,
+      "lat_lon": [51.2468,6.6921],
+      "specialty": "Innere Medizin"
+    }
+];
 
 var acts = [
   {
