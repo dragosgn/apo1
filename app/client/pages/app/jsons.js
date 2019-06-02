@@ -106,38 +106,38 @@ var banks = [{
 
 
 var courses = [
-    {
-      "id": 1,
-      "name": "How to hire good employees.",
-      "address": "Louise-Dumont-Straße 1, 40211 Düsseldorf",
-      "image": images.course,
-      "lat_lon": [51.228604, 6.787391],
-      "specialty": "Finanzierung"
-    },
-    {
-      "id": 2,
-      "name": "Arztneimittelinteraktionen bei multimorbiden Patienten",
-      "address": "Louise-Dumont-Straße 5, 40211 Düsseldorf",
-      "image": images.course,
-      "lat_lon": [51.24382,6.73003],
-      "specialty": "Notfallmedizin"
-    },
-    {
-      "id": 3,
-      "name": "Tabakkonsum und Strategien zur Vermeidung",
-      "address": "Glehner Weg 8, 40211 Düsseldorf",
-      "image": images.course,
-      "lat_lon": [51.24368,6.72541],
-      "specialty": "Lungenarzt"
-    },
-    {
-      "id": 4,
-      "name": "Bakterien als Erreger nosokomialer Infektionen",
-      "address": "Auf den Steinen 13, 40211 Düsseldorf",
-      "image": images.course,
-      "lat_lon": [51.2468,6.6921],
-      "specialty": "Innere Medizin"
-    }
+  {
+    "id": 1,
+    "name": "How to hire good employees.",
+    "address": "Louise-Dumont-Straße 1, 40211 Düsseldorf",
+    "image": images.course,
+    "lat_lon": [51.228604, 6.787391],
+    "specialty": "Finanzierung"
+  },
+  {
+    "id": 2,
+    "name": "Arztneimittelinteraktionen bei multimorbiden Patienten",
+    "address": "Louise-Dumont-Straße 5, 40211 Düsseldorf",
+    "image": images.course,
+    "lat_lon": [51.24382, 6.73003],
+    "specialty": "Notfallmedizin"
+  },
+  {
+    "id": 3,
+    "name": "Tabakkonsum und Strategien zur Vermeidung",
+    "address": "Glehner Weg 8, 40211 Düsseldorf",
+    "image": images.course,
+    "lat_lon": [51.24368, 6.72541],
+    "specialty": "Lungenarzt"
+  },
+  {
+    "id": 4,
+    "name": "Bakterien als Erreger nosokomialer Infektionen",
+    "address": "Auf den Steinen 13, 40211 Düsseldorf",
+    "image": images.course,
+    "lat_lon": [51.2468, 6.6921],
+    "specialty": "Innere Medizin"
+  }
 ];
 
 var acts = [
@@ -159,7 +159,7 @@ var acts = [
   },
   {
     user: 2,
-    tags:["Fettabsaugung entstehen", "Falten entstehen", "NahtLift entstehen", "Unterhautfettgewebe", "Haut bleibende Faden"],
+    tags: ["Fettabsaugung entstehen", "Falten entstehen", "NahtLift entstehen", "Unterhautfettgewebe", "Haut bleibende Faden"],
     views: 33,
     target: "",
     text: "Fettabsaugung mit anschliessendem Nahtlift",
@@ -170,7 +170,7 @@ var acts = [
   {
     user: 4,
     views: 207,
-    tags:["Haartransplantationen", "Selbstvertrauen", "stumpfes Haar", "Danuta Sobczak",],
+    tags: ["Haartransplantationen", "Selbstvertrauen", "stumpfes Haar", "Danuta Sobczak",],
     target: "",
     text: "Haartransplantationen",
     activity: "article",
@@ -181,18 +181,19 @@ var acts = [
     user: 4,
     views: 35,
     target: "",
+    tags:["Acetylcholin", "Thalamus", "cholinerge Neuronen", "Gehirn", "motorischen Nerven", "sensorischer Reize", "Cortex"],
     activity: "article",
     text: "Multitalent Acetylcholin",
     image: images.article,
-    article: ([    "Acetylcholin wurde wohl deshalb als erster Neurotransmitter entdeckt, weil er für das vegetative Nervensystem sowie an der Schnittstelle zwischen motorischen Nerven und Skelettmuskulatur eine entscheidende Rolle spielt. Aber auch im Gehirn finden sich cholinerge Neuronen. Die wichtigsten davon lassen sich zu zwei diffusen Modulationssystemen zusammenfassen.",    "",    "Das eine System innerviert von der Basis des Großhirns aus (zwischen und unter den Basalganglien) Hippocampus, Neocortex und Riechkolben. Diese Zellen gehören zu den ersten, die bei der Alzheimer-Krankheit absterben. Inwieweit es darüber hinaus eine Verbindung zu der Krankheit gibt, ist unklar. Unter den zugelassenen Alzheimer-Medikamenten, die den Verlust geistiger Fähigkeiten zumindest verzögern sollen, befinden sich aber Wirkstoffe, die den Acetylcholin-Abbau im Gehirn verlangsamen. Das zweite System besteht aus Zellen im Pons und im Tegmentum des Mittelhirns. Es wirkt vor allem in den Thalamus hinein, darüber aber auch stark ins Großhirn.",    "",    "Beteiligt sind die cholinergen Neuronen etwa an der Steuerung von Aufmerksamkeit und der Erregbarkeit des Gehirns während Schlaf– und Wachrhythmus. In Tierversuchen wurde deutlich, dass Acetylcholin die Weiterleitung sensorischer Reize vom Thalamus in die zuständigen Cortex-Regionen fördert. Darüber hinaus dürfte es für Plastizität und Lernen eine entscheidende Rolle spielen."]).reduce((a,b)=>a.concat(b))
+    article: (["Acetylcholin wurde wohl deshalb als erster Neurotransmitter entdeckt, weil er für das vegetative Nervensystem sowie an der Schnittstelle zwischen motorischen Nerven und Skelettmuskulatur eine entscheidende Rolle spielt. Aber auch im Gehirn finden sich cholinerge Neuronen. Die wichtigsten davon lassen sich zu zwei diffusen Modulationssystemen zusammenfassen.", "", "Das eine System innerviert von der Basis des Großhirns aus (zwischen und unter den Basalganglien) Hippocampus, Neocortex und Riechkolben. Diese Zellen gehören zu den ersten, die bei der Alzheimer-Krankheit absterben. Inwieweit es darüber hinaus eine Verbindung zu der Krankheit gibt, ist unklar. Unter den zugelassenen Alzheimer-Medikamenten, die den Verlust geistiger Fähigkeiten zumindest verzögern sollen, befinden sich aber Wirkstoffe, die den Acetylcholin-Abbau im Gehirn verlangsamen. Das zweite System besteht aus Zellen im Pons und im Tegmentum des Mittelhirns. Es wirkt vor allem in den Thalamus hinein, darüber aber auch stark ins Großhirn.", "", "Beteiligt sind die cholinergen Neuronen etwa an der Steuerung von Aufmerksamkeit und der Erregbarkeit des Gehirns während Schlaf– und Wachrhythmus. In Tierversuchen wurde deutlich, dass Acetylcholin die Weiterleitung sensorischer Reize vom Thalamus in die zuständigen Cortex-Regionen fördert. Darüber hinaus dürfte es für Plastizität und Lernen eine entscheidende Rolle spielen."]).reduce((a, b) => a.concat(b))
   }
 ]
 
 var dialog = [
   [
-  {
-    user: 4,
-    text: "Hello, I have a question."
+    {
+      user: 4,
+      text: "Hello, I have a question."
     },
     {
       user: 2,
