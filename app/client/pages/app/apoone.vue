@@ -3,7 +3,7 @@
     <v-container>
       <v-layout align-center justify-center>
         <v-flex grow>
-          <h3>Proffetionals you might know</h3>
+          <h3>Professionals you might know</h3>
           <v-flex v-for="(hack, index) in acts" pb-2 :key="index">
             <v-card class="elevation-2">
               <v-card-text>
