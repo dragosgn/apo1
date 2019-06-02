@@ -8,7 +8,7 @@
                         width="3"
                         color="blue"
                         v-if="loading"
-                ></v-progress-linear >
+                ></v-progress-linear>
                 <h3>Registration</h3>
                 <v-layout xs12 sm6 md6 row>
 
@@ -71,10 +71,24 @@
                     ></v-text-field>
                 </v-flex>
             </v-layout>
- 
-                <v-btn block to="/app/apoone" style="color:white" color="#1B777D" >
+            <v-flex>
+                <v-btn block to="/app/apoone" style="color:white" color="#1B777D">
                     Register
                 </v-btn>
+            </v-flex>
+            or login with:
+            <v-layout row align-center justify-center>
+                <v-flex xs5 pr-1>
+                    <v-btn block to="/app/apoone" style="color:white" color="#1B777D">
+                          UpToDate
+                    </v-btn>
+                </v-flex>
+                <v-flex pl-1  xs5>
+                    <v-btn  block to="/app/apoone" style="color:white" color="#1B777D">
+                         Amboss
+                    </v-btn>
+                </v-flex>
+            </v-layout>
 
         </v-container>
 
