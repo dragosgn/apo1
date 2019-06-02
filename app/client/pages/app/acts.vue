@@ -19,11 +19,8 @@
                         </v-flex>
 
                     </v-layout>
-            
 
 
-
-               
                     <!--Activities of the person-->
                     <v-flex v-for="(hack, index) in acts" pb-2 :key="index"
                     >
@@ -34,7 +31,7 @@
                             <v-card-text>
 
 
-                                <v-layout  align-center justify-center row wrap>
+                                <v-layout align-center justify-center row wrap>
                                     <v-flex xs5 sm3>
                                         <v-card>
                                             <v-img height=80 :src="users[hack.user].image"/>
@@ -63,7 +60,7 @@
                             <v-card
                                     :to="'/app/question?act='+index"
                                     row width="100%">
-                                <v-layout row align-center justify-start row fill-height >
+                                <v-layout row align-center justify-start row fill-height>
                                     <v-flex pl-1 xs3>
                                         <v-sheet>
                                             <v-img height="40px" contain :src="hack.image"/>
@@ -105,19 +102,19 @@
                 </v-flex>
 
             </v-layout>
-
-                    <v-layout>
-                        <v-flex xs12 sm12 >
-                            <v-card>
+            <div v-if="false">
+                <v-layout>
+                    <v-flex xs12 sm12>
+                        <v-card>
                             <v-img
-                                src="https://vonboyettcorp.com/wp-content/uploads/2016/05/medical-equipment.jpg"
-                                aspect-ratio="2.75"
+                                    src="https://vonboyettcorp.com/wp-content/uploads/2016/05/medical-equipment.jpg"
+                                    aspect-ratio="2.75"
                             ></v-img>
 
                             <v-card-title primary-title>
                                 <div>
-                                <h3 class="headline mb-0">ISEC latest diagnostic equipment comming 12.06.2019</h3>
-                                <div> {{ card_text }} </div>
+                                    <h3 class="headline mb-0">ISEC latest diagnostic equipment comming 12.06.2019</h3>
+                                    <div> {{ card_text }}</div>
                                 </div>
                             </v-card-title>
 
@@ -125,24 +122,25 @@
                                 <v-btn flat color="orange">Share</v-btn>
                                 <v-btn flat color="orange">Explore</v-btn>
                             </v-card-actions>
-                            </v-card>
-                        </v-flex>
-                    </v-layout>
-                    <v-divider ></v-divider>
+                        </v-card>
+                    </v-flex>
+                </v-layout>
+                <v-divider></v-divider>
 
-                    <div style="padding:10px; height: 5px;" /> 
-                             <v-layout>
-                        <v-flex xs12 sm12 >
-                            <v-card>
+                <div style="padding:10px; height: 5px;"/>
+                <v-layout>
+                    <v-flex xs12 sm12>
+                        <v-card>
                             <v-img
-                                src="https://www.sciencedaily.com/images/2019/05/190530141522_1_540x360.jpg"
-                                aspect-ratio="2.75"
+                                    src="https://www.sciencedaily.com/images/2019/05/190530141522_1_540x360.jpg"
+                                    aspect-ratio="2.75"
                             ></v-img>
 
                             <v-card-title primary-title>
                                 <div>
-                                <h3 class="headline mb-0">New way to protect against high-dose radiation damage discovered</h3>
-                                <div> {{ card_text }} </div>
+                                    <h3 class="headline mb-0">New way to protect against high-dose radiation damage
+                                        discovered</h3>
+                                    <div> {{ card_text }}</div>
                                 </div>
                             </v-card-title>
 
@@ -150,11 +148,13 @@
                                 <v-btn flat color="orange">Share</v-btn>
                                 <v-btn flat color="orange">Explore</v-btn>
                             </v-card-actions>
-                            </v-card>
-                        </v-flex>
-                    </v-layout>
-                    <v-divider ></v-divider>
-                    <div style="padding:10px; height: 5px;" /> 
+                        </v-card>
+                    </v-flex>
+                </v-layout>
+                <v-divider></v-divider>
+                <div style="padding:10px; height: 5px;"/>
+            </div>
+
         </v-container>
 
     </v-app>

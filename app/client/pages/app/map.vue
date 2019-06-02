@@ -65,7 +65,7 @@
                   <!--Description of the article-->
                   <v-card
                     v-if="user.hasOwnProperty('act')"
-                    to="/app/apoone"
+                    :to="'/app/question?act='+user.act.id"
                     row
                     align-center
                     justify-start
@@ -195,6 +195,7 @@ export default {
     for (let i = 0; i < acts.length; i++) {
       let user = acts[i].user;
       this.users[user].act = acts[i];
+      this.users[user].act.id = i;
     }
   }
 };
