@@ -1,3 +1,9 @@
+var images = {
+  article: "/icons/002-contract.svg",
+  course: "/icons/001-class.svg",
+  question: "/icons/003-question.svg",
+}
+
 var users = [
   {
     "id": 1,
@@ -103,47 +109,47 @@ var courses = [{
   "id": 1,
   "name": "How to hire good employees.",
   "address": "Louise-Dumont-Straße 1, 40211 Düsseldorf",
-  "image": "/profiles/courses.png",
+  "image": images.course,
   "lat_lon": [51.228604, 6.787391],
   "specialty": "Finanzierung"
 }];
 
 var acts = [
-        {
-          user: 2,
-          views:10,
-          target: "",
-          text: "I need a new X-Ray. Can someone give advice.",
-          activity: "question",
-          image: 'https://www.dgn.de/unternehmen/wp-content/uploads/sites/3/2017/04/apobank.jpg'
-        },
-        {
-          user: 2,
-          views:33,
-          target: "",
-          text: "Fettabsaugung mit anschliessendem Nahtlift",
-          activity: "article",
-          image: "https://www.dgn.de/unternehmen/wp-content/uploads/sites/3/2017/04/apobank.jpg",
-          article:([    "Fettabsaugung mit abschließendem NahtLift",    "",    "Fachbeitrag von Dr. med. Alamouti",    "",    "Bei einer Liposuktion (Fettabsaugung) werden Fettzellen abgesaugt. Es entsteht ein Hautüberschuss, der zur unerwünschte Falten führen kann. In einigen Fällen bietet es sich an, nach der Fettabsaugung das neue NahtLift-Verfahren einzusetzen, um die Haut zu straffen.",    "",    "Die Fettabsaugung-Operation",    "",    "Doch fangen wir vorne an: Was passiert eigentlich mit den Fettzellen bei einer Fettabsaugung (Liposuktion)? Bei der Fettabsaugung in Tumeszenz-Lokalanästhesie wird nach einer örtlichen Betäubung des Gewebes eine lange, stumpfe Nadel in das Unterhautfettgewebe eingeführt. Durch das Einspritzen großer Mengen einer verdünnten Lokalanästhesie-Lösung ins Unterhautfettgewebe (bis zu sechs Liter Flüssigkeit), werden die Fettzellen gelockert, getrennt und können so abgesaugt werden. ",    "",    "Warum können Falten entstehen?",    "",    "Nach der Absaugung fehlen die abgesaugten Fettzellen unter der Haut, wodurch Falten oder Dellen entstehen können. Dem beugt man vor, indem die Haut angedrückt wird. Nach der Fettabsaugung am Hals muss man deshalb während der Nachbehandlung ein Tuch tragen, bei den Hüften hilft eine Kompressionshose, die mindestens zwei Wochen bei Tag und Nacht angelegt werden muss. Durch die Kompressionshose wird das Unterhautfettgewebe zusammengedrückt. Dadurch wird verhindet, dass sich in den schmalen Tunneln, die bei der Fettabsaugung entstehen, keine Flüssigkeit ansammelt. ",    "",    "Die Fettabsaugung-Operation",    "",    "Doch fangen wir vorne an: Was passiert eigentlich mit den Fettzellen bei einer Fettabsaugung (Liposuktion)? Bei der Fettabsaugung in Tumeszenz-Lokalanästhesie wird nach einer örtlichen Betäubung des Gewebes eine lange, stumpfe Nadel in das Unterhautfettgewebe eingeführt. Durch das Einspritzen großer Mengen einer verdünnten Lokalanästhesie-Lösung ins Unterhautfettgewebe (bis zu sechs Liter Flüssigkeit), werden die Fettzellen gelockert, getrennt und können so abgesaugt werden. ",    "",    "Warum können Falten entstehen?",    "",    "Nach der Absaugung fehlen die abgesaugten Fettzellen unter der Haut, wodurch Falten oder Dellen entstehen können. Dem beugt man vor, indem die Haut angedrückt wird. Nach der Fettabsaugung am Hals muss man deshalb während der Nachbehandlung ein Tuch tragen, bei den Hüften hilft eine Kompressionshose, die mindestens zwei Wochen bei Tag und Nacht angelegt werden muss. Durch die Kompressionshose wird das Unterhautfettgewebe zusammengedrückt. Dadurch wird verhindet, dass sich in den schmalen Tunneln, die bei der Fettabsaugung entstehen, keine Flüssigkeit ansammelt. ",    "",    "Um sich den NahtLift besser vorstellen zu können, kann man das Beispiel eines Knopfes heranziehen. Denken Sie an einen Knopf, der an einer Jacke locker nach unten hängt. Um diesen Knopf anzuheben, zieht man einen Faden erst durch den Stoff und dann durch den Knopf. Mit dem Faden kann so der Knopf wieder nach oben und an den Stoff angezogen werden. ",    "",    "Bei Falten oder Dellen der Haut wird dieser Faden also wie ein „Lasso“ unter der Haut ausgerichtet und zum Schluss angezogen. Durch das Anziehen erfolgt ein Aufhängen des Bindegewebeapparates und es kommt zu einer deutlichen Straffung. ",    "",    "Mögliche Folgen und Nebenwirkungen des NahtLifts?",    "",    "Das NahtLift-Verfahren ist neu. Es wurde Anfang 2004 von Dr. med. Alamouti (Haranni Clinic, Herne) entwickelt. ",    "",    "Das NahtLift-Verfahren erfolgt wie auch die vorherige Liposuktion bei örtlicher Betäubung; eine Vollnarkose mit all ihren Vor- und Nachteilen ist nicht notwendig. Falls der Faden als störend empfunden wird, kann man versuchen ihn nach einer Woche nach der Liposuktion wieder zu entfernen. Ansonsten lösst sich der Faden nach einer gewissen Zeit von selber.",    "",    "Der NahtLift-Faden besteht aus einem 45 Zentimeter langem monofilem Polyamid. An diesem befindet sich eine feine Nadel. Bereits seit vielen Jahrzehnten wird der unter der Haut bleibende Faden in anderen Bereichen der Medizin, wie der Augenheilkunde, der allgemeinen Chirurgie, der Herz- und Neurochirurgie, verwendet. Nach Aussagen des Herstellers zersetzt sich der Faden nach einigen Wochen und führt zu keinen Hautreaktionen.",    "",    "Durch den NahtLift entstehen keine große Narben, denn es erfolgt nur ein kleiner Einstich. Minimale Beschwerden, wie kurzzeitiges Spannungsgefühl, sind möglich. Bei den meisten Patienten tritt eine schnelle Erholung ein und die Schwellungen sind nach ein paar Tagen abgeklungen."]).reduce((a,b)=>a.concat(b))
-        },
-        {
-          user: 4,
-          views:207,
-          target: "",
-          text: "Haartransplantationen",
-          activity: "article",
-          image: "https://www.dgn.de/unternehmen/wp-content/uploads/sites/3/2017/04/apobank.jpg",
-          article:([    "Mehr Haar, mehr Selbstvertrauen, mehr Lebensfreude",    "",    "Ein Video-Interview mit Frau Dr. Sobczak zu den wichtigsten Fragen moderner Haartransplantation",    "",    "Auch wenn Schönheitsoperationen heute gesellschaftlich akzeptierter sind denn je: Viele Menschen haben immer noch großen Respekt vor der Vollnarkose und dem Skalpell und überlegen es sich deshalb sehr genau, ob sie sich des Aussehens wegen unter das Messer legen. Doch zum Glück ist nicht jeder Eingriff invasiv, und dankenswerterweise gibt es immer mehr Verfahren, die bei minimalen Risiken maximale Wirkung zeigen. Eines der besten Beispiele dafür sind Haartransplantationen. Sie sind inzwischen so perfektioniert worden und zudem so nachgefragt, dass man sie auf vielen Ebenen fast schon mit einem Besuch beim Zahnarzt vergleichen könnte.",    "",    "Haarpracht mit zunehmenden Jahren immer mehr verabschiedet und schließlich nur noch vergleichsweise dünnes und stumpfes Haar zurücklässt. Doch Menschen, bei denen das Haar ganz ausfällt, erleben manchmal sogar echte Verzweiflung und büßen erheblich an Selbstvertrauen ein. Nicht nur für Frauen stellt Haarverlust eine echte Krise dar, auch Männer können sich damit nur schwer abfinden. Doch das muss heute auch niemand mehr. Dr. Danuta Sobczak aus Freiburg ist Dermatologin und hat sich auf Haarerkrankungen spezialisiert. Sie weiß aus über 20-jähriger Erfahrung: „Haartransplantationen sind ein problemloser und schmerzfreier Eingriff, der heute mit so gut wie keinen Risiken mehr verbunden ist.\""]).reduce((a,b)=>a.concat(b))
-        },
-        {
-          user: 6,
-          views:130,
-          target: "",
-          activity: "course",
-          text: "How to hire good personal",
-          image: "https://www.dgn.de/unternehmen/wp-content/uploads/sites/3/2017/04/apobank.jpg"
-        }
-      ]
+  {
+    user: 2,
+    views: 10,
+    target: "",
+    text: "I need a new X-Ray. Can someone give advice.",
+    activity: "question",
+    image: images.question,
+  },
+  {
+    user: 2,
+    views: 33,
+    target: "",
+    text: "Fettabsaugung mit anschliessendem Nahtlift",
+    activity: "article",
+    image: images.article,
+    article: (["Fettabsaugung mit abschließendem NahtLift", "", "Fachbeitrag von Dr. med. Alamouti", "", "Bei einer Liposuktion (Fettabsaugung) werden Fettzellen abgesaugt. Es entsteht ein Hautüberschuss, der zur unerwünschte Falten führen kann. In einigen Fällen bietet es sich an, nach der Fettabsaugung das neue NahtLift-Verfahren einzusetzen, um die Haut zu straffen.", "", "Die Fettabsaugung-Operation", "", "Doch fangen wir vorne an: Was passiert eigentlich mit den Fettzellen bei einer Fettabsaugung (Liposuktion)? Bei der Fettabsaugung in Tumeszenz-Lokalanästhesie wird nach einer örtlichen Betäubung des Gewebes eine lange, stumpfe Nadel in das Unterhautfettgewebe eingeführt. Durch das Einspritzen großer Mengen einer verdünnten Lokalanästhesie-Lösung ins Unterhautfettgewebe (bis zu sechs Liter Flüssigkeit), werden die Fettzellen gelockert, getrennt und können so abgesaugt werden. ", "", "Warum können Falten entstehen?", "", "Nach der Absaugung fehlen die abgesaugten Fettzellen unter der Haut, wodurch Falten oder Dellen entstehen können. Dem beugt man vor, indem die Haut angedrückt wird. Nach der Fettabsaugung am Hals muss man deshalb während der Nachbehandlung ein Tuch tragen, bei den Hüften hilft eine Kompressionshose, die mindestens zwei Wochen bei Tag und Nacht angelegt werden muss. Durch die Kompressionshose wird das Unterhautfettgewebe zusammengedrückt. Dadurch wird verhindet, dass sich in den schmalen Tunneln, die bei der Fettabsaugung entstehen, keine Flüssigkeit ansammelt. ", "", "Die Fettabsaugung-Operation", "", "Doch fangen wir vorne an: Was passiert eigentlich mit den Fettzellen bei einer Fettabsaugung (Liposuktion)? Bei der Fettabsaugung in Tumeszenz-Lokalanästhesie wird nach einer örtlichen Betäubung des Gewebes eine lange, stumpfe Nadel in das Unterhautfettgewebe eingeführt. Durch das Einspritzen großer Mengen einer verdünnten Lokalanästhesie-Lösung ins Unterhautfettgewebe (bis zu sechs Liter Flüssigkeit), werden die Fettzellen gelockert, getrennt und können so abgesaugt werden. ", "", "Warum können Falten entstehen?", "", "Nach der Absaugung fehlen die abgesaugten Fettzellen unter der Haut, wodurch Falten oder Dellen entstehen können. Dem beugt man vor, indem die Haut angedrückt wird. Nach der Fettabsaugung am Hals muss man deshalb während der Nachbehandlung ein Tuch tragen, bei den Hüften hilft eine Kompressionshose, die mindestens zwei Wochen bei Tag und Nacht angelegt werden muss. Durch die Kompressionshose wird das Unterhautfettgewebe zusammengedrückt. Dadurch wird verhindet, dass sich in den schmalen Tunneln, die bei der Fettabsaugung entstehen, keine Flüssigkeit ansammelt. ", "", "Um sich den NahtLift besser vorstellen zu können, kann man das Beispiel eines Knopfes heranziehen. Denken Sie an einen Knopf, der an einer Jacke locker nach unten hängt. Um diesen Knopf anzuheben, zieht man einen Faden erst durch den Stoff und dann durch den Knopf. Mit dem Faden kann so der Knopf wieder nach oben und an den Stoff angezogen werden. ", "", "Bei Falten oder Dellen der Haut wird dieser Faden also wie ein „Lasso“ unter der Haut ausgerichtet und zum Schluss angezogen. Durch das Anziehen erfolgt ein Aufhängen des Bindegewebeapparates und es kommt zu einer deutlichen Straffung. ", "", "Mögliche Folgen und Nebenwirkungen des NahtLifts?", "", "Das NahtLift-Verfahren ist neu. Es wurde Anfang 2004 von Dr. med. Alamouti (Haranni Clinic, Herne) entwickelt. ", "", "Das NahtLift-Verfahren erfolgt wie auch die vorherige Liposuktion bei örtlicher Betäubung; eine Vollnarkose mit all ihren Vor- und Nachteilen ist nicht notwendig. Falls der Faden als störend empfunden wird, kann man versuchen ihn nach einer Woche nach der Liposuktion wieder zu entfernen. Ansonsten lösst sich der Faden nach einer gewissen Zeit von selber.", "", "Der NahtLift-Faden besteht aus einem 45 Zentimeter langem monofilem Polyamid. An diesem befindet sich eine feine Nadel. Bereits seit vielen Jahrzehnten wird der unter der Haut bleibende Faden in anderen Bereichen der Medizin, wie der Augenheilkunde, der allgemeinen Chirurgie, der Herz- und Neurochirurgie, verwendet. Nach Aussagen des Herstellers zersetzt sich der Faden nach einigen Wochen und führt zu keinen Hautreaktionen.", "", "Durch den NahtLift entstehen keine große Narben, denn es erfolgt nur ein kleiner Einstich. Minimale Beschwerden, wie kurzzeitiges Spannungsgefühl, sind möglich. Bei den meisten Patienten tritt eine schnelle Erholung ein und die Schwellungen sind nach ein paar Tagen abgeklungen."]).reduce((a, b) => a.concat(b))
+  },
+  {
+    user: 4,
+    views: 207,
+    target: "",
+    text: "Haartransplantationen",
+    activity: "article",
+    image: images.article,
+    article: (["Mehr Haar, mehr Selbstvertrauen, mehr Lebensfreude", "", "Ein Video-Interview mit Frau Dr. Sobczak zu den wichtigsten Fragen moderner Haartransplantation", "", "Auch wenn Schönheitsoperationen heute gesellschaftlich akzeptierter sind denn je: Viele Menschen haben immer noch großen Respekt vor der Vollnarkose und dem Skalpell und überlegen es sich deshalb sehr genau, ob sie sich des Aussehens wegen unter das Messer legen. Doch zum Glück ist nicht jeder Eingriff invasiv, und dankenswerterweise gibt es immer mehr Verfahren, die bei minimalen Risiken maximale Wirkung zeigen. Eines der besten Beispiele dafür sind Haartransplantationen. Sie sind inzwischen so perfektioniert worden und zudem so nachgefragt, dass man sie auf vielen Ebenen fast schon mit einem Besuch beim Zahnarzt vergleichen könnte.", "", "Haarpracht mit zunehmenden Jahren immer mehr verabschiedet und schließlich nur noch vergleichsweise dünnes und stumpfes Haar zurücklässt. Doch Menschen, bei denen das Haar ganz ausfällt, erleben manchmal sogar echte Verzweiflung und büßen erheblich an Selbstvertrauen ein. Nicht nur für Frauen stellt Haarverlust eine echte Krise dar, auch Männer können sich damit nur schwer abfinden. Doch das muss heute auch niemand mehr. Dr. Danuta Sobczak aus Freiburg ist Dermatologin und hat sich auf Haarerkrankungen spezialisiert. Sie weiß aus über 20-jähriger Erfahrung: „Haartransplantationen sind ein problemloser und schmerzfreier Eingriff, der heute mit so gut wie keinen Risiken mehr verbunden ist.\""]).reduce((a, b) => a.concat(b))
+  },
+  {
+    user: 6,
+    views: 130,
+    target: "",
+    activity: "course",
+    text: "How to hire good personal",
+    image: images.course,
+  }
+]
 
 var dialog = [
   {
