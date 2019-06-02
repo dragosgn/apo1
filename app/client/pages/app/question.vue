@@ -30,26 +30,24 @@
 
             <v-layout align-right justify-center column>
 
-                <v-flex pb-2 v-for="(say,idx) in dialog" :key="idx">
+                <v-flex pb-2 v-for="(say,idx) in dialog[act_nr]" :key="idx">
                     <v-card class="elevation-2">
-                        <v-card-title>
-
-                        </v-card-title>
                         <v-card-text>
                             <v-layout row align-right justify-center class="subheading"
                                       :reverse="say.user===1"
                             >
-                                <v-flex shrink>
+                                <v-flex xs2>
                                     <v-avatar>
                                         <img contain :src="users[say.user].image"/>
                                     </v-avatar>
                                 </v-flex>
-                                <v-flex grow pl-2>
+                                <v-flex xs10 pl-2>
                                     {{say.text}}
                                 </v-flex>
                             </v-layout>
-
                         </v-card-text>
+
+
 
 
                     </v-card>
@@ -81,7 +79,7 @@
 </template>
 
 <script>
-  import {users, banks, courses, acts} from "./jsons.js";
+  import {users, banks, courses, acts,dialog} from "./jsons.js";
   import axios from "axios";
   import Vue from "vue";
 
@@ -114,20 +112,7 @@
       response: undefined,
       comment: undefined,
       min_acceptance: 0.35,
-      dialog: [
-        {
-          user: 4,
-          text: "Hello, I have a question?"
-        },
-        {
-          user: 2,
-          text: "You need to do this or that."
-        },
-        {
-          user: 1,
-          text: "What for a stupid advice!"
-        }
-      ],
+      dialog: dialog,
 
     }),
     watch: {},
@@ -159,7 +144,7 @@
               this.acceptance_score = parseInt(response.data.documents[0].score * 100) / 100;
 
               if (response.data.documents[0].score > this.min_acceptance) {
-                this.dialog.push(
+                this.dialog[this.act_nr].push(
                     {
                       user: 1,
                       text: this.comment
