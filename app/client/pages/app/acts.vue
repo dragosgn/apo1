@@ -3,21 +3,16 @@
         <v-container>
             <v-layout align-center justify-center>
                 <v-flex grow>
-                    <h3>Relevante Ereignesse</h3>
                     <v-layout row align-center>
-
+                        <v-flex xs-6 pl-3>
+                            <h3>Relevante Ereignesse</h3>
+                        </v-flex>
                         <v-flex xs-6>
                             <v-select
                                     :items="['Frauenarzt','Männerarzt']"
                                     label="Fachrichtung"
                             ></v-select>
                         </v-flex>
-                        <v-flex xs-6 pl-3>
-                            <v-btn block to="/app/map" style="color:white" color="#1B777D">
-                                Switch to Map
-                            </v-btn>
-                        </v-flex>
-
                     </v-layout>
 
 
