@@ -71,7 +71,11 @@
                     ></v-text-field>
                 </v-flex>
             </v-layout>
-
+            <a href="/app/apoone">
+                <v-btn block style="color:white" color="#1B777D" @click="import_profile">
+                    Register
+                </v-btn>
+            </a>
         </v-container>
 
     </v-app>
@@ -97,8 +101,8 @@
           "id": 1,
           "med_id": 123213,
           "name": "Dr. Schmid",
-          "phone": "lkjlkjl",
-          "email": "haha@best.luck",
+          "phone": "+49176247279526",
+          "email": "schmid@med-schmid.de",
           "spec": "Frauenarzt",
           "city": "Düsseldorf",
           "stadtteil": "Stadtteil",
