@@ -15,29 +15,30 @@
                         <v-layout align-center justify-space-between row fill-height>
 
                             <v-btn :active="toggle_exclusive===6" @click="toggle_exclusive=6" flat color="white"
-                                   to="/app">
+                                   to="/app/registration">
                                 <div :style="toggle_exclusive===6 ? 'text-decoration: underline' :''">
-                                    Home
+                                    Registrieren
                                 </div>
                                 <v-icon>home</v-icon>
                             </v-btn>
 
                             <v-btn :active="toggle_exclusive===1" @click="toggle_exclusive=1" flat color="white"
-                                   to="/app/Vita">
+                                   to="/app/acts">
                                 <div :style="toggle_exclusive===1 ? 'text-decoration: underline' :''">
-                                    Vita
+                                    Feed
                                 </div>
                                 <v-icon>public</v-icon>
                             </v-btn>
 
 
                             <v-btn :active="toggle_exclusive===2" @click="toggle_exclusive=2" flat color="white"
-                                   to="/app/Skills">
+                                   to="/app/map">
                                 <div :style="toggle_exclusive===2 ? 'text-decoration: underline' :''">
-                                    Skills
+                                    Map
                                 </div>
-                                <v-icon>color_lens</v-icon>
+                                <v-icon>my_location</v-icon>
                             </v-btn>
+                            <!--
                             <v-btn
                                     :active="toggle_exclusive===3" @click="toggle_exclusive=3" flat color="white"
                                     to="/app/Hackathons">
@@ -55,6 +56,7 @@
                                 </div>
                                 <v-icon>touch_app</v-icon>
                             </v-btn>
+                            -->
                         </v-layout>
 
                     </v-flex>
