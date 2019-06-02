@@ -12,6 +12,7 @@
               <v-btn block to="/app/map" style="color:white" color="#1B777D">Switch to Map</v-btn>
             </v-flex>
           </v-layout>
+
           <v-flex v-for="(hack, index) in acts" pb-2 :key="index">
             <v-card class="elevation-2">
               <v-card-text>
@@ -62,6 +63,29 @@
           </v-flex>
         </v-flex>
       </v-layout>
+      <v-layout marignBottom="10px">
+        <v-flex xs12 sm12>
+          <v-card>
+            <v-img
+              src="https://d1rtnate6r9gtg.cloudfront.net/-/media/iewcglobal/images/section-images/us/industries-we-serve/medical-equipment_banner.jpg?h=400&w=1400&la=en-US&hash=538B2B62E69C5DDFE0817C524A487F8B6CFF2D4C&vs=1&d=00010101T000000Z"
+              aspect-ratio="2.75"
+            ></v-img>
+
+            <v-card-title primary-title>
+              <div>
+                <h3 class="headline mb-0">Latets IEWC diagonostics equipment release as of July 2019</h3>
+                <div>{{ card_text }}</div>
+              </div>
+            </v-card-title>
+
+            <v-card-actions>
+              <v-btn flat color="orange">Share</v-btn>
+              <v-btn flat color="orange">Explore</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-flex>
+      </v-layout>
+      <v-divider inset></v-divider>
     </v-container>
   </v-app>
 </template>
