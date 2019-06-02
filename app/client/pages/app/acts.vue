@@ -19,6 +19,11 @@
                         </v-flex>
 
                     </v-layout>
+            
+
+
+
+               
                     <!--Activities of the person-->
                     <v-flex v-for="(hack, index) in acts" pb-2 :key="index"
                     >
@@ -32,14 +37,14 @@
                                 <v-layout row wrap>
                                     <v-flex xs5 sm3>
                                         <v-card>
-                                            <v-img height=75 :src="users[index+1].image"/>
+                                            <v-img height=75 :src="users[hack.user].image"/>
 
                                         </v-card>
 
                                     </v-flex>
 
                                     <v-flex pl-2 grow>
-                                        {{users[index+1].name}}
+                                        {{users[hack.user].name}}
                                         <br/>
                                         Düsseldorf Altstadt
                                         <br/>
@@ -57,7 +62,7 @@
                             <!--Description of the article-->
                             <v-card
                                     :to="'/app/question?act='+index"
-                                    row align-center justify-start row fill-height wight="100%">
+                                    row align-center justify-start row fill-height width="100%">
                                 <v-layout row pa-1>
                                     <v-flex pa-1 xs3>
                                         <v-sheet>
@@ -66,8 +71,8 @@
                                         </v-sheet>
                                     </v-flex>
                                     <v-flex pl-2>
-                                        <span style="color:#1B777D;font-style: italic">{{hack.activity}}</span>:
-                                        {{hack.text}}
+                                        <span style="color:#1B777D;font-style: italic; font-size: 16px;">{{hack.activity}}</span>:
+                                        <p style="color:#1B777D;font-style: italic; font-size: 22px;">{{hack.text}}</p>
 
                                     </v-flex>
 
@@ -101,6 +106,56 @@
                 </v-flex>
 
             </v-layout>
+
+                    <v-layout>
+                        <v-flex xs12 sm12 >
+                            <v-card>
+                            <v-img
+                                src="https://vonboyettcorp.com/wp-content/uploads/2016/05/medical-equipment.jpg"
+                                aspect-ratio="2.75"
+                            ></v-img>
+
+                            <v-card-title primary-title>
+                                <div>
+                                <h3 class="headline mb-0">ISEC latest diagnostic equipment comming 12.06.2019</h3>
+                                <div> {{ card_text }} </div>
+                                </div>
+                            </v-card-title>
+
+                            <v-card-actions>
+                                <v-btn flat color="orange">Share</v-btn>
+                                <v-btn flat color="orange">Explore</v-btn>
+                            </v-card-actions>
+                            </v-card>
+                        </v-flex>
+                    </v-layout>
+                    <v-divider ></v-divider>
+
+                    <div style="padding:10px; height: 5px;" /> 
+                             <v-layout>
+                        <v-flex xs12 sm12 >
+                            <v-card>
+                            <v-img
+                                src="https://www.sciencedaily.com/images/2019/05/190530141522_1_540x360.jpg"
+                                aspect-ratio="2.75"
+                            ></v-img>
+
+                            <v-card-title primary-title>
+                                <div>
+                                <h3 class="headline mb-0">New way to protect against high-dose radiation damage discovered</h3>
+                                <div> {{ card_text }} </div>
+                                </div>
+                            </v-card-title>
+
+                            <v-card-actions>
+                                <v-btn flat color="orange">Share</v-btn>
+                                <v-btn flat color="orange">Explore</v-btn>
+                            </v-card-actions>
+                            </v-card>
+                        </v-flex>
+                    </v-layout>
+                    <v-divider ></v-divider>
+                    <div style="padding:10px; height: 5px;" /> 
         </v-container>
 
     </v-app>

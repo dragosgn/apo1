@@ -142,7 +142,7 @@ var courses = [
 
 var acts = [
   {
-    user: 2,
+    user: 3,
     views: 10,
     target: "",
     text: "I need a new X-Ray. Can someone give advice.",
@@ -151,6 +151,7 @@ var acts = [
   },
   {
     user: 2,
+    tags:["Fettabsaugung entstehen", "Falten entstehen", "NahtLift entstehen", "Unterhautfettgewebe", "Haut bleibende Faden"],
     views: 33,
     target: "",
     text: "Fettabsaugung mit anschliessendem Nahtlift",
@@ -161,6 +162,7 @@ var acts = [
   {
     user: 4,
     views: 207,
+    tag:["Haartransplantationen", "Selbstvertrauen", "stumpfes Haar", "Danuta Sobczak",],
     target: "",
     text: "Haartransplantationen",
     activity: "article",
