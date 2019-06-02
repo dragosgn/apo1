@@ -1,9 +1,20 @@
 <template>
     <v-app>
         <v-container>
-            <h3>{{users[acts[act_nr].user].name}}'s {{acts[act_nr].activity }}:</h3>
-            <p>{{acts[act_nr].text}}</p>
-            <p>{{acts[act_nr].article}}</p>
+            <v-layout>
+                <v-flex xs5 sm3 pa-2>
+                    <v-card>
+                        <v-img height="100px" :src="users[acts[act_nr].user].image"/>
+
+                    </v-card>
+                </v-flex>
+                <v-flex grow >
+                    <h3>{{users[acts[act_nr].user].name}}'s {{acts[act_nr].activity }}:</h3>
+                    <p>{{acts[act_nr].text}}</p>
+                    <p>{{acts[act_nr].article}}</p>
+                </v-flex>
+            </v-layout>
+
             <v-layout align-right justify-center column>
 
                 <v-flex pb-2 v-for="(say,idx) in dialog" :key="idx">
@@ -54,7 +65,7 @@
 </template>
 
 <script>
-  import {users, banks, courses,acts} from "./jsons.js";
+  import {users, banks, courses, acts} from "./jsons.js";
   import axios from "axios";
   import Vue from "vue";
 
@@ -81,7 +92,7 @@
     name: "Question",
     data: () => ({
       act_nr: undefined,
-      acts:acts,
+      acts: acts,
       acceptance_score: 1,
       users: users,
       response: undefined,
@@ -104,8 +115,8 @@
 
     }),
     watch: {},
-    created:function(){
-       this.act_nr = Number(this.$route.query.act);
+    created: function () {
+      this.act_nr = Number(this.$route.query.act);
     },
     mounted: function () {
 

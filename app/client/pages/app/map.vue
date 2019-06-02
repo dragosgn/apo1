@@ -28,9 +28,6 @@
         </v-flex>
       </v-layout>
 
-      <template>
-        <v-progress-linear color="orange darkern-1" :indeterminate="loading"></v-progress-linear>
-      </template>
 
       <no-ssr>
         <l-map class="mini-map" :zoom="13" :center="[users[0].lat_lon[0],users[0].lat_lon[1]]">

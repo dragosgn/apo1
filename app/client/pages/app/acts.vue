@@ -37,14 +37,14 @@
                                 <v-layout row wrap>
                                     <v-flex xs5 sm3>
                                         <v-card>
-                                            <v-img height=75 :src="users[index+1].image"/>
+                                            <v-img height=75 :src="users[hack.user].image"/>
 
                                         </v-card>
 
                                     </v-flex>
 
                                     <v-flex pl-2 grow>
-                                        {{users[index+1].name}}
+                                        {{users[hack.user].name}}
                                         <br/>
                                         Düsseldorf Altstadt
                                         <br/>
