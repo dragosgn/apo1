@@ -48,6 +48,7 @@
       >
         account_circle
       </v-icon>
+      Verified user
     </v-badge>
 
     <v-badge
@@ -69,6 +70,8 @@
         account_box
       </v-icon>
     </v-badge>
+      You have 15 new messaages
+
   </div>
 </template>
           
