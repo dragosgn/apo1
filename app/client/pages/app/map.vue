@@ -58,22 +58,22 @@
                                 v-for="user in (loc_types)"
                                 :lat-lng="[user.lat_lon[0],user.lat_lon[1]]"
                         >
-                            <l-icon :icon-anchor=" [30/2, 0]">
-                                <v-badge overlap style="    background-color: transparent;">
+                            <l-icon :icon-anchor=" [50/2, 0]">
+                                <v-badge overlap bottom color="transparent" style="background-color: transparent;">
                                     <template v-slot:badge
                                               v-if="(user.id===1&&idx==='users')||user.hasOwnProperty('act')">
-                                        <v-icon v-if="user.id===1"
-                                                small color="orange">
+                                        <v-icon  large v-if="user.id===1"
+                                                 color="orange">
                                             star
                                         </v-icon>
-                                        <v-icon v-if="user.hasOwnProperty('act')"
-                                                small color="#C72961">
+                                        <v-icon large  v-if="user.hasOwnProperty('act')"
+                                                 color="#C72961">
                                             remove_red_eye
                                         </v-icon>
                                     </template>
-                                    <v-card style="height:30px;  background-color: white">
+                                    <v-card style="height:50px;  background-color: white">
 
-                                        <v-img height="30" width="30" :src="user.image" style="text-align: right">
+                                        <v-img height="50" width="50" :src="user.image" style="text-align: right">
                                         </v-img>
 
 
