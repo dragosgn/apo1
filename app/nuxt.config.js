@@ -1,7 +1,7 @@
 module.exports = {
   mode: "universal",
   head: {
-    title: "Grow",
+    title: "Uni Viva Social",
     dir: {
       // assets: 'custom-assets',
       // layouts: 'custom-layouts',
