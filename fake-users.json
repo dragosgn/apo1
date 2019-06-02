@@ -4,7 +4,7 @@
       "id":1,
       "name":"Dr. med Silber Boch",
       "address":"Werdener Str. 8",
-      "image":"/profiles/profiles/GilbertBoch.jpg",
+      "image":"profiles/GilbertBoch.jpg",
       "lat_lon":[51.2191094,6.8043112],
       "specialty":"Allgemeinmediziner"
     },
@@ -12,7 +12,7 @@
       "id":2,
       "name":"Dr. med Martin Reith",
       "address":"Werdener Str. 8",
-      "image":"/profiles/profiles/MartinReith.jpg",
+      "image":"profiles/MartinReith.jpg",
       "lat_lon":[51.217469, 6.804767],
       "specialty":"Internist"
     },
@@ -20,7 +20,7 @@
       "id":3,
       "name":"Anselm k. Gottstein",
       "address":"Werdener Str. 8",
-      "image":"/profiles/profiles/AnselmKGottstein.jpg",
+      "image":"profiles/AnselmKGottstein.jpg",
       "lat_lon":[51.217004, 6.802058],
       "specialty":"Allgemeinmediziner"
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "name": "Dr. med. Kathrin Voigt",
       "address":"Friedrichstr. 13-15",
-      "image":"/profiles/profiles/KarthrinVoigt.jpg",
+      "image":"profiles/KathrinVoigt.jpg",
       "lat_lon":[51.217796, 6.776869],
       "specialty":"Internistin"
     },
@@ -36,7 +36,7 @@
       "id": 5,
       "name": "Dr. med. Andrea Birkhain",
       "address":"Friedrichstr. 13-15",
-      "image":"/profiles/profiles/AndreaBirkhahn.jpg",
+      "image":"profiles/AndreaBirkhahn.jpg",
       "lat_lon":[51.219190, 6.776710],
       "specialty":"Internist"
     },
