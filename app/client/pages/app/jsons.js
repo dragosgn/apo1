@@ -145,12 +145,26 @@ var acts = [
         }
       ]
 
-
+var dialog = [
+  {
+    user: 4,
+    text: "Hello, I have a question?"
+  },
+  {
+    user: 2,
+    text: "You need to do this or that."
+  },
+  {
+    user: 1,
+    text: "What for a stupid advice!"
+  }
+];
 export {
   users,
   banks,
   courses,
-    acts
+  acts,
+  dialog
 }
 
 

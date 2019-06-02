@@ -19,9 +19,12 @@
                         </v-flex>
 
                     </v-layout>
+                    <!--Activities of the person-->
                     <v-flex v-for="(hack, index) in acts" pb-2 :key="index"
                     >
-                        <v-card class="elevation-2">
+                        <v-card class="elevation-2"
+
+                        >
 
                             <v-card-text>
 
@@ -53,7 +56,7 @@
                             </v-card-text>
                             <!--Description of the article-->
                             <v-card
-                                    to="/app/apoone"
+                                    :to="'/app/question?act='+index"
                                     row align-center justify-start row fill-height wight="100%">
                                 <v-layout row pa-1>
                                     <v-flex pa-1 xs3>
