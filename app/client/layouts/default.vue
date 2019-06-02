@@ -4,7 +4,8 @@
             id="inspire"
 
     >
-
+    <v-img height="55" contain src="https://www.univiva.de/wp-content/uploads/2019/04/Logo_univiva_Claim_grau_4c.png">
+                            </v-img>
         <template v-if="true">
             <v-layout class="sun">
                 <v-bottom-nav
@@ -12,8 +13,9 @@
                         color="transparent"
                 >
                     <v-flex xs12 sm10 md7>
+                        
                         <v-layout align-center justify-space-between row fill-height>
-
+                            
                             <v-btn  :active="toggle_exclusive===6" @click="toggle_exclusive=6" flat color="red"
                                    to="/app/registration">
                                 <div :style="toggle_exclusive===6 ? 'text-decoration: underline' :''">
@@ -141,7 +143,7 @@
         border-top: white;
         border-top-width: 4px;
         border-top-style: solid;
-        background-color: white;
+        background-color: transparent;
     }
 
     .v-item-group.v-bottom-nav .v-btn {
