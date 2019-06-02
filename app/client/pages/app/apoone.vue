@@ -77,20 +77,15 @@
                         </v-card>
 
                     </v-flex>
-                    <v-card-actions v-if="true">
-                        <v-layout row align-center justify-start row fill-height>
-                            <v-flex pl-2 shrink>
-                                <v-btn style="color:white" color="#1B777D">
-                                    follow
-                                </v-btn>
-                            </v-flex>
-
-
-                        </v-layout>
-                    </v-card-actions>
+                        
                 </v-flex>
 
             </v-layout>
+            <a href="/app/acts">
+                <v-btn block style="color:white" color="#1B777D" >
+                    Follow
+                </v-btn>
+            </a>
 
         </v-container>
 
