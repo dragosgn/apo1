@@ -97,23 +97,80 @@
                                 :lat-lng="[user.lat_lon[0],user.lat_lon[1]]"
                         >
                             <l-icon :icon-anchor=" [30/2, 0]">
-                                <v-card style="height:30px; width: 30px; background-color: white">
-                                    <v-img height="30" width="30" :src="user.image"/>
-                                </v-card>
+                                <v-badge overlap style="    background-color: transparent;">
+                                    <template v-slot:badge
+                                              v-if="(user.id===1&&idx==='users')||user.hasOwnProperty('act')">
+                                        <v-icon v-if="user.id===1"
+                                                small color="orange">
+                                            star
+                                        </v-icon>
+                                        <v-icon v-if="user.hasOwnProperty('act')"
+                                                small color="#C72961">
+                                            remove_red_eye
+                                        </v-icon>
+                                    </template>
+                                    <v-card style="height:30px;  background-color: white">
+
+                                        <v-img height="30" width="30" :src="user.image" style="text-align: right">
+                                        </v-img>
+
+
+                                    </v-card>
+                                </v-badge>
+
                             </l-icon>
                             <l-popup>
                                 <v-layout column style="text-align: center">
                                     <v-card>
-                                        <img
-                                                v-lazy="user.image    "
-                                                width="100"
-                                        />
+                                        <img v-lazy="user.image" width="100"/>
                                     </v-card>
                                     <v-flex pt-1>
                                         {{user.address}}
                                         <br/>
                                         {{user.name}}
                                     </v-flex>
+                                    <!--Description of the article-->
+                                    <!--Description of the article-->
+                                    <v-card
+                                            v-if="user.hasOwnProperty('act')"
+                                            to="/app/apoone"
+                                            row align-center justify-start row fill-height wight="100%">
+                                        <v-layout row pa-1>
+                                            <v-flex pa-1 xs3>
+                                                <v-sheet>
+                                                    <v-img height="30px" contain :src="user.act.image"/>
+
+                                                </v-sheet>
+                                            </v-flex>
+                                            <v-flex pl-2>
+                                                <span style="color:#1B777D;font-style: italic">{{user.act.activity}}</span>:
+                                                {{user.act.text}}
+                                            </v-flex>
+                                        </v-layout>
+                                        <v-layout
+                                                align-right justify-end
+                                                row pa-1 style="color:#C72961; size:10px">
+                                            <v-flex xs2>
+                                                <v-icon small color="#C72961">
+                                                    save_alt
+                                                </v-icon>
+                                                2
+                                            </v-flex>
+                                            <v-flex xs2>
+                                                <v-icon small color="#C72961">
+                                                    remove_red_eye
+                                                </v-icon>
+                                                23
+                                            </v-flex>
+                                            <v-flex xs2>
+                                                <v-icon small color="#C72961">
+                                                    comment
+                                                </v-icon>
+                                                3
+                                            </v-flex>
+
+                                        </v-layout>
+                                    </v-card>
                                 </v-layout>
                             </l-popup>
 
@@ -133,7 +190,7 @@
 <script>
   import axios from "axios";
   import Vue from "vue";
-  import {users, banks, courses} from "./jsons.js";
+  import {users, banks, courses, acts} from "./jsons.js";
 
 
   var api_host = 'https://ohsrb65n38.execute-api.eu-central-1.amazonaws.com/proxy/'
@@ -161,10 +218,11 @@
       // Travel time describes the stage on which it is traveling
       users: users,
       banks: banks,
+      acts: acts,
       locs: {
         banks: banks,
         users: users,
-        courses:courses,
+        courses: courses,
       },
       travel_time: 0,
       sex: true,
@@ -213,19 +271,12 @@
       },
     },
     watch: {},
-    computed: {
-      currentRouteName() {
-        return this.$route.name;
-      },
-      // icon_one() {
-      //   return icon({
-      //     iconUrl: this.source[this.toggle_exclusive].logo,
-      //     iconSize: [25, 25],
-      //     iconAnchor: [25/2, 25/2]
-      //   })
-      // }
-    },
+    computed: {},
     created() {
+      for (let i = 0; i < acts.length; i++) {
+        let user = acts[i].user;
+        this.users[user].act = acts[i];
+      }
 
     }
   };

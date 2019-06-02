@@ -108,11 +108,36 @@ var courses = [{
   "specialty": "Finanzierung"
 }];
 
+var acts = [
+        {
+          user: 2,
+          target: "",
+          text: "I need a new X-Ray. Can someone give advice.",
+          activity: "question",
+          image: 'https://www.dgn.de/unternehmen/wp-content/uploads/sites/3/2017/04/apobank.jpg'
+        },
+        {
+          user: 4,
+          target: "",
+          text: "New X-Ray Siemens 3000",
+          activity: "article",
+          image: "https://www.dgn.de/unternehmen/wp-content/uploads/sites/3/2017/04/apobank.jpg"
+        },
+        {
+          user: 6,
+          target: "",
+          activity: "course",
+          text: "How to hire good personal",
+          image: "https://www.dgn.de/unternehmen/wp-content/uploads/sites/3/2017/04/apobank.jpg"
+        }
+      ]
+
 
 export {
   users,
   banks,
-  courses
+  courses,
+    acts
 }
 
 

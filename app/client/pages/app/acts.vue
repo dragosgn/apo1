@@ -36,6 +36,7 @@
                                 </v-layout>
 
                             </v-card-text>
+                            <!--Description of the article-->
                             <v-card
                                     to="/app/apoone"
                                     row align-center justify-start row fill-height wight="100%">
@@ -70,7 +71,7 @@
                                     </v-flex>
                                     <v-flex xs2>
                                         <v-icon small color="#C72961">
-                                             comment
+                                            comment
                                         </v-icon>
                                         3
                                     </v-flex>
@@ -89,37 +90,12 @@
 </template>
 
 <script>
-    import {users,    banks, courses} from"./jsons.js";
-
-
-
+  import {users, banks, courses, acts} from "./jsons.js";
   export default {
     name: "Acts",
     data: () => ({
       users: users,
-      acts: [
-        {
-          user: 1,
-          target: "",
-          text: "I need a new X-Ray. Can someone give advice.",
-          activity: "question",
-          image: 'https://www.dgn.de/unternehmen/wp-content/uploads/sites/3/2017/04/apobank.jpg'
-        },
-        {
-          user: 2,
-          target: "",
-          text: "New X-Ray Siemens 3000",
-          activity: "article",
-          image: "https://www.dgn.de/unternehmen/wp-content/uploads/sites/3/2017/04/apobank.jpg"
-        },
-        {
-          user: 6,
-          target: "",
-          activity: "course",
-          text: "How to hire good personal",
-          image: "https://www.dgn.de/unternehmen/wp-content/uploads/sites/3/2017/04/apobank.jpg"
-        }
-      ],
+      acts: acts,
 
     }),
     watch: {},
