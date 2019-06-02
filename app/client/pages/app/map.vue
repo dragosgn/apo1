@@ -16,7 +16,7 @@
         </v-flex>
 
         <v-flex pl-4>
-          <v-switch color="red darken-2" v-model="sex" :label="sex?"singles":"all""></v-switch>
+          <v-switch color="red darken-2" v-model="sex" :label='sex?"singles":"all"'></v-switch>
         </v-flex>
       </v-layout>
       <v-layout row align-center>
