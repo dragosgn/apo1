@@ -2,6 +2,17 @@
     <v-app>
         <v-container>
             <v-layout column>
+                <v-btn
+                        v-for="(view,idx) in views" :key="idx"
+                        large color="orange darken-1" width="100%" :to="view.to">
+                    <v-layout align-center justify-center wrap>
+                        <v-flex xs12 style="text-align: center">
+                            {{view.text}}
+                        </v-flex>
+                    </v-layout>
+                </v-btn>
+
+
                 <v-btn large color="orange darken-1" width="100%" to="/app/video">
                     <v-layout align-center justify-center wrap>
                         <v-flex shrink>
@@ -29,7 +40,7 @@
                 </v-btn>
 
                 <v-btn large color="orange darken-1" width="100%" to="/app/demos/GoodWork">
-                    <v-layout  align-center justify-center wrap>
+                    <v-layout align-center justify-center wrap>
                         <v-flex shrink pr-1>
                             <v-icon small color="indigo">fa-route</v-icon>
                         </v-flex>
@@ -66,7 +77,27 @@
 
 <script>
   export default {
-    name: "Demo"
+    name: "Demo",
+    data: () => ({
+          views: [
+            {
+              text: "map feed",
+              to: "map"
+            },{
+              text: "Follow",
+              to: "apoone"
+            },{
+              text: "registration",
+              to: "registration"
+            },{
+              text: "Feed",
+              to: "acts"
+            },
+          ]
+
+        }
+    )
+
   }
 </script>
 
